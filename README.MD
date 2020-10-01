@@ -18,4 +18,4 @@ we can also get humidity by using this command:
 ```bash
 node . -c City-name -h # h flag is used to get Humidity in Precents
 ```
-#### Code written by: Akshay Kumar & Vaibhav Kaushik
+#### Code written by: Akshay Kumar 
