@@ -23,6 +23,7 @@ npm install -g . # Installing using npm
 yarn global add . # Installing using yarn
 ```
 
+
 ## Usage
 
 Write weathery in console and enter the city name and apikey which you can get for free from <https://api.openweathermap.org/> when asked.
@@ -32,3 +33,5 @@ weathery
 ```
 
 ### Code written by: Akshay Kumar & Vaibhav Kaushik
+
+
