@@ -13,14 +13,12 @@ For: Linux Users
 
 ```bash
 sudo npm install -g . # Installing using npm
-sudo yarn global add . # Installing using yarn
 ```
 
 For: Windows Users
 
 ```bash
 npm install -g . # Installing using npm
-yarn global add . # Installing using yarn
 ```
 
 
