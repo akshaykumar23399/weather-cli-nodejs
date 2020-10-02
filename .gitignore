@@ -76,4 +76,11 @@ typings/
 .fusebox/
 
 # IDE Folder
+<<<<<<< HEAD
+.idea/
+
+# VS Code Floder
+.vscode/
+=======
 .idea
+>>>>>>> a127b515f59154975174123288e35a328fa91a93
