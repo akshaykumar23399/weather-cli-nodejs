@@ -1,21 +1,34 @@
 # weather-cli-nodejs
-This is a cli app get weather from api and shows that on Command Line with a image converted to ascii(American Standard Code for Information Interchange) and the result will also be spoken.
 
-## How to setup
-First you need to change the YOUR-API-KEY in line 6 by api key which can be generated from https://www.openweathermap.org/
+This is a cli app get weather from api and shows that on Command Line.
 
-install all dependencies by running this command:
+## Installing
 
 ```bash
-npm install
+git clone https://github.com/akshaykumar23399/weather-cli-nodejs.git # Cloning the repo
+cd weather-cli-nodejs
 ```
-we can get the temperature by using this command:
+
+For: Linux Users
 
 ```bash
-node . -c City-name #Type City Name of which you need to get the weather By default city name is New delhi
+sudo npm install -g . # Installing using npm
+sudo yarn global add . # Installing using yarn
 ```
-we can also get humidity by using this command:
+
+For: Windows Users
+
 ```bash
-node . -c City-name -h # h flag is used to get Humidity in Precents
+npm install -g . # Installing using npm
+yarn global add . # Installing using yarn
 ```
-#### Code written by: Akshay Kumar & Vaibhav Kaushik
+
+## Usage
+
+Write weathery in console and enter the city name and apikey which you can get for free from <https://api.openweathermap.org/> when asked.
+
+```bash
+weathery
+```
+
+### Code written by: Akshay Kumar & Vaibhav Kaushik
