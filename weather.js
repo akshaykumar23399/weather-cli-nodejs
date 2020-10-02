@@ -78,9 +78,7 @@ let url;
         borderStyle: "round",
       })
     );
-
     process.exit(0);
   };
-
   request(url, showWeather);
 })();
