@@ -31,6 +31,21 @@ let url;
         }
       },
     },
+    
+        {
+      name: "tempunit",
+      type: "input",
+      message: "Enter wheather you need temprature in farenieght or degree celcius?(c or f):",
+      validate: function (value) {
+        if (value == 'c' || value == 'f') {
+          return true;
+        } else {
+          return "Please enter unit of the temprature.";
+        }
+      },
+    },
+    
+    
     {
       name: "apiKey",
       type: "input",
@@ -45,6 +60,7 @@ let url;
     },
   ]);
   url = `https://api.openweathermap.org/data/2.5/weather?q=${answers.city}&appid=${answers.apiKey}&units=metric`;
+  let tempunit = ${answers.tempunit};
 
   // Initiazlizing Loader and Starting it.
   const loader = new Spinner(`Checking Weather of ${answers.city}...`);
@@ -59,6 +75,9 @@ let url;
     const data = JSON.parse(body);
 
     const temp = data.main.temp;
+    if(tempunit == 'f'){
+    temp = (temp × 9/5) + 32;
+    }
     const feels_like = data.main.feels_like;
     const description = data.weather[0].description;
     const temp_min = data.main.temp_min;
